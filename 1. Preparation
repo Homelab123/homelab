@@ -1,0 +1,13 @@
+I only have access to my main PC to work with so I will:
+
+1. Update my PC with latest BIOS, update drivers, check for Windows updates & software updates I might need just to start on a fresh foundation.
+2. Enable virtualization in my BIOS settings (SVM Mode enabled since AMD CPU).
+3. Will download list of softwares I will need such as VMWare and packet tracer, I'll list all the tools I've had to use later.
+4. I will need OS images to install on the VMs, but I will get them once I get to the practical building of the homelab.
+
+
+Planning my approach:
+
+1. I will first list all the components of network administration so I can touch on all of them.
+2. I will simulate a network on packet tracer that will cover all of these components.
+3. I will build that simulated network into a homelab in VMWare, scaled to what is possible (by that I mean I won't create 20 workstations etc since just a few is enough to showcase the example).
