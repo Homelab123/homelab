@@ -1,9 +1,9 @@
-I only have access to my main PC to work with so I will:
+NOTE: I only have access to my main PC to do this
 
-1. Update my PC with latest BIOS, update drivers, check for Windows updates & software updates I might need just to start on a fresh foundation.
-2. Enable virtualization in my BIOS settings (SVM Mode enabled since AMD CPU).
-3. Will download list of softwares I will need such as VMWare and packet tracer, I'll list all the tools I've had to use later.
-4. I will need OS images to install on the VMs, but I will get them once I get to the practical building of the homelab.
+1. Updated my PC with latest BIOS, drivers, Windows updates & software updates.
+2. Enabled virtualization in my BIOS settings (SVM Mode enabled since AMD CPU).
+3. Downloaded & installed latest Cisco Packet Tracer and VmWare Workstation Pro (free versions).
+4. Will make a full list of softwares etc later, I will also get the images I need for the VMs as I go (linux/windows servers and workstations)
 
 
 Planning my approach:
