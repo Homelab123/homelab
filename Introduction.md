@@ -5,7 +5,7 @@ Hello, my name is Ameer from Montreal and this is where I'll journal and documen
 
 <br>Why am I doing this?
 
-I have an AEC (Québec terminology) in Network Administration, completed at O’Sullivan College. After my studies, I worked for Couche-Tard Inc. as an IT Technician for about three years, where my role was to provide support for the various systems installed in its thousands of stores located across Canada and the United States. Unfortunately, the position became stagnant, and I wanted to continue growing in the field, so I made the decision to leave in search of new opportunities.
+I have an AEC (Quebec terminology) in Network Administration, completed at O’Sullivan College. After my studies, I worked for Couche-Tard Inc. as an IT Technician for about three years, where my role was to provide support for the various systems installed in its thousands of stores located across Canada and the United States. Unfortunately, the position became stagnant, and I wanted to continue growing in the field, so I made the decision to leave in search of new opportunities.
 
 During this transition, I took a temporary job (during the peak of COVID) at a company called Projet Grand Montréal, a small business that had contracts to mobilize and install vaccination clinics throughout Montreal. After those contracts were completed, the owner wanted me to continue working for him and, knowing my background in IT, offered me a position as an internal IT technician and office clerk.
 
