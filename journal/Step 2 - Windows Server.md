@@ -9,4 +9,4 @@ Reasoning:
 - Changed VMware preferences so that VMs are stored in my storage disk and not my NVMe for resource allocation efficiency reasons (no need to store large virtual disks on my NVMe that I use on my main PC)
 - Created VM with these settings for now:
 
-![Homelab123](screenshots/WindowsServer2022%20-%20Create%20VM.png)
+![Homelab123](https://github.com/Homelab123/homelab/blob/main/screenshots%20/WindowsServer2022%20-%20Create%20VM.png?raw=true)
