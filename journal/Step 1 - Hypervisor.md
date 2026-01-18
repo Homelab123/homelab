@@ -1,13 +1,12 @@
 # Step 1 - Hypervisor
 
 Specs and limitations:
-
-OS Name	Microsoft Windows 10 Pro
-Version	10.0.19045 Build 19045
-System Type	x64-based PC
-Processor	AMD Ryzen 7 2700X Eight-Core Processor, 3700 Mhz, 8 Core(s), 16 Logical Processor(s)
-BaseBoard Product	PRIME X470-PRO
-Installed Physical Memory (RAM)	16.0 GB
+- OS Name	Microsoft Windows 10 Pro
+- Version	10.0.19045 Build 19045
+- System Type	x64-based PC
+- Processor	AMD Ryzen 7 2700X Eight-Core Processor, 3700 Mhz, 8 Core(s), 16 Logical Processor(s)
+- BaseBoard Product	PRIME X470-PRO
+- Installed Physical Memory (RAM)	16.0 GB
 
 Choice of hypervisor: VMware Workstation Pro 25H2
 Reasoning:
