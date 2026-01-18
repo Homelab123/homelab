@@ -1,0 +1,44 @@
+Step 1 - Hypervisor
+
+Specs and limitations:
+OS Name	Microsoft Windows 10 Pro
+Version	10.0.19045 Build 19045
+Other OS Description 	Not Available
+OS Manufacturer	Microsoft Corporation
+System Name	DESKTOP-SVEM7UL
+System Manufacturer	System manufacturer
+System Model	System Product Name
+System Type	x64-based PC
+System SKU	SKU
+Processor	AMD Ryzen 7 2700X Eight-Core Processor, 3700 Mhz, 8 Core(s), 16 Logical Processor(s)
+BIOS Version/Date	American Megatrends Inc. 6232, 9/29/2024
+SMBIOS Version	3.3
+Embedded Controller Version	255.255
+BIOS Mode	UEFI
+BaseBoard Manufacturer	ASUSTeK COMPUTER INC.
+BaseBoard Product	PRIME X470-PRO
+BaseBoard Version	Rev X.0x
+Platform Role	Desktop
+Secure Boot State	Off
+PCR7 Configuration	Elevation Required to View
+Windows Directory	C:\WINDOWS
+System Directory	C:\WINDOWS\system32
+Boot Device	\Device\HarddiskVolume2
+Locale	United States
+Hardware Abstraction Layer	Version = "10.0.19041.6456"
+User Name	DESKTOP-SVEM7UL\A
+Time Zone	Eastern Standard Time
+Installed Physical Memory (RAM)	16.0 GB
+Total Physical Memory	15.9 GB
+Available Physical Memory	6.15 GB
+Total Virtual Memory	18.3 GB
+Available Virtual Memory	5.31 GB
+Page File Space	2.38 GB
+Page File	C:\pagefile.sys
+Kernel DMA Protection	Off
+Virtualization-based security	Not enabled
+Device Encryption Support	Elevation Required to View
+Hyper-V - VM Monitor Mode Extensions	Yes
+Hyper-V - Second Level Address Translation Extensions	Yes
+Hyper-V - Virtualization Enabled in Firmware	No
+Hyper-V - Data Execution Protection	Yes
