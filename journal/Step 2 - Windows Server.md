@@ -19,9 +19,9 @@ Reasoning:
 - Logged in and ran full windows updates until none left, going through restarts when prompted until fully installed with final restart.
 - Created VM snapshot of the clean fully updated installation
 - Installed VMware Tools and made some performance tweaks:
-- Advanced System Settings > Performance > Settings > Adjust for best performance
-- Disabled hibernation (cmd > powercfg -h off)
-- Disabled Customer Experience Improvement Program (CEIP) tasks, Windows Defender scheduled scans (for lab purposes), Windows Update Auto-Update task (for lab purposes)
+    Advanced System Settings > Performance > Settings > Adjust for best performance
+    Disabled hibernation (cmd > powercfg -h off)
+    Disabled Customer Experience Improvement Program (CEIP) tasks, Windows Defender scheduled scans (for lab purposes), Windows Update Auto-Update task (for lab purposes)
 
 <br>Problems encountered and troubleshoot:
 - Ran into a Microsoft licence issue when booting VM:
