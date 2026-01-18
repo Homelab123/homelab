@@ -4,8 +4,9 @@ Reasoning:
 - Had to find a good balance between what is widely adopted in organizations currently and what is the most up to date (2025 is too recent, less people use it. 2019 is older than 2022 and not necessarily more used)
 - Industry standard, widely adopted.
 
-> Downloaded Windows Server 2022 eval. 64-bit (english_US) ISO file from Microsoft's official website
-> Changed VMware preferences so that VMs are stored in my storage disk and not my NVMe for resource allocation efficiency reasons (no need to store large virtual disks on my NVMe that I use on my main PC)
-> Created VM with these settings for now:
 
-![Description](screenshots/WindowsServer2022%20-%20Create%20VM.png)
+- Downloaded Windows Server 2022 eval. 64-bit (english_US) ISO file from Microsoft's official website
+- Changed VMware preferences so that VMs are stored in my storage disk and not my NVMe for resource allocation efficiency reasons (no need to store large virtual disks on my NVMe that I use on my main PC)
+- Created VM with these settings for now:
+
+![journal](screenshots/WindowsServer2022%20-%20Create%20VM.png)
