@@ -14,9 +14,20 @@ Reasoning:
 ![Homelab123](https://github.com/Homelab123/homelab/blob/main/screenshots/WindowsServer2022%20-%20Create%20VM.png?raw=true)
 - Installed Windows Server 2022 Standard Evaluation x64 (instead of datacenter) with GUI for homelab purposes
 
+<br>Post-installation:
+- Ensured VM loads to Win Srv properly
+- Logged in and ran full windows updates until none left, going through restarts when prompted until fully installed with final restart.
+- Created VM snapshot of the clean fully updated installation
+- Installed VMware Tools and made some performance tweaks:
+      - Advanced System Settings > Performance > Settings > Adjust for best performance
+      - Disabled hibernation (cmd > powercfg -h off)
+      - Disabled Customer Experience Improvement Program (CEIP) tasks, Windows Defender scheduled scans (for lab purposes), Windows Update Auto-Update task (for lab purposes)
+
 <br>Problems encountered and troubleshoot:
 - Ran into a Microsoft licence issue when booting VM:
     Troubleshooting steps taken:
-    - Copy pasted the error in search engines
+    - Copy-pasted the error in search engines
     - Found the issue was caused by the VM having a floppy disk installed by default, making the VM try to boot from it. Deleted the floppy disk from the VM
-    - It gave me a new error due to boot priority, but only had to press F2 and choose what to boot from and now VM went through and is currently installing as I'm typing this.
+    - It gave me another error due to boot priority but I just had to press a key when prompted (~5 sec window) to boot from the mounted ISO instead of going to a default failed boot screen.
+
+<br>Now Windows Server 2022 is fully installed + updated + tweaked + snapshotted before continuing to next step.
