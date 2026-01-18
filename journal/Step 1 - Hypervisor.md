@@ -18,6 +18,6 @@ Reasoning:
 - Version: 25H2 over 17.0 just to have the most recent version.
 
 <br>Technical steps taken:
-> Downloaded and installed VMware Workstation Pro 25H2.
-> Enabled SVM mode in BIOS (required for virtualization).
-> Opened Workstation and checked for updates before continuing.
+- Downloaded and installed VMware Workstation Pro 25H2.
+- Enabled SVM mode in BIOS (required for virtualization).
+- Opened Workstation and checked for updates before continuing.
