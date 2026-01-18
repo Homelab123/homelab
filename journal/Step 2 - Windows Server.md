@@ -1,3 +1,5 @@
+# Step 2 - Windows Server
+
 Choice: Windows Server 2022 from Microsoft's evaluation center
 Reasoning:
 - Free for a limited time but can reset activation with a checkpoint for the purposes of a homelab.
