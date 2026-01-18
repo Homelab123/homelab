@@ -8,7 +8,7 @@ Specs and limitations:
 - BaseBoard Product	PRIME X470-PRO
 - Installed Physical Memory (RAM)	16.0 GB
 
-Choice of hypervisor: VMware Workstation Pro 25H2
+<br>Choice of hypervisor: VMware Workstation Pro 25H2
 Reasoning:
 - Small homelab due to limitations
 - Type-2 Hypervisor (Proxmox was my first choice but I chose against it for simplicity reasons since this is my main PC and not a seperate machine I can install a bare-metal hypervisor on without going into partitioning and dual-boot etc.)
