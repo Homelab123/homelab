@@ -12,3 +12,11 @@ Reasoning:
 - Created VM with these settings for now:
 
 ![Homelab123](https://github.com/Homelab123/homelab/blob/main/screenshots/WindowsServer2022%20-%20Create%20VM.png?raw=true)
+- Installed Windows Server 2022 Standard Evaluation x64 (instead of datacenter) for homelab purposes
+
+<br>Problems encountered and troubleshoot:
+- Ran into a Microsoft licence issue when booting VM:
+    Troubleshooting steps taken:
+    - Copy pasted the error in search engines
+    - Found the issue was caused by the VM having a floppy disk installed by default, making the VM try to boot from it. Deleted the floppy disk from the VM
+    - It gave me a new error due to boot priority, but only had to press F2 and choose what to boot from and now VM went through and is currently installing as I'm typing this.
