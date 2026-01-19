@@ -1,7 +1,7 @@
 # Step 2 - Windows Server
 
 Choice: Windows Server 2022 from Microsoft's evaluation center
-Reasoning:
+<br>Reasoning:
 - Free for a limited time but can reset activation with a checkpoint for the purposes of a homelab.
 - Had to find a good balance between what is widely adopted in organizations currently and what is the most up to date (2025 is too recent, less people use it. 2019 is older than 2022 and not necessarily more used)
 - Industry standard, widely adopted.
