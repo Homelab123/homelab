@@ -1,7 +1,7 @@
 #Step 3 - Network Planning
 
 As I was preparing VMs and making templates I realized I should do the network/address planning first in order to build templates which are pre-configured to point to the domain controller.
-So, I saved where I was at on my template and decided to plan the network addressing before continuing. For the context of this homelab I want to simulate a medium-sized enterprise
+So, I saved where I was at on my template and decided to plan the network before continuing. For the context of this homelab I want to simulate a medium-sized enterprise
 which incorporates network segmentation (subnetting) in order to review this notion and to showcase that it is not something I have no knowledge of although I do not claim to master it.
 
 The single most important aspect I keep in mind is that my network should be scalable without a single issue in the future if the organisation was to expand. Despite this being a homelab,
