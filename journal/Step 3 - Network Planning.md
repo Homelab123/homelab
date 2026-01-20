@@ -1,21 +1,10 @@
 #Step 3 - Network Planning
 
 As I was preparing VMs and making templates I realized I should do the network/address planning first in order to build templates which are pre-configured to point to the domain controller.
-So, I saved where I was at on my template and decided to plan the network before continuing. For the context of this homelab I want to simulate a medium-sized enterprise
-which incorporates network segmentation (subnetting).
+So, I saved where I was at on my template and decided to plan the network before continuing. At first I wanted to make a complex network with multiple subnets emulating a large international enterprise, but for the 
+purposes of a homelab I decided to scale it down and keep it simple.
 
-The single most important aspect I keep in mind is that my network should be scalable without a single issue in the future if the organisation was to expand. Despite this being a homelab,
-I want to future-proof my addressing scheme in a way that it's still simple for a medium-sized company to read and manage, but also plan for possible major expansion.
-<br>Key points:
-- Scalable
-- Readable
-- Future-proof
-
-This medium-sized business might grow one day to be an international company with thousands of stores per regions, I want to plan for it and keep a readable addressing scheme:
-
-Choice: 10.0.0.0/8, not because I need this massive amount of addresses specifically, but because I can have a better naming convention and split addresses by stores and by region in a way that is clean and readable whiel also being scalable.
-
-10.0.0.0/8
-
-Segmentation:
-HQ
+I will create 3 subnets and VLANs and a router VM with a trunked NIC:
+10.0.0.0/24: VLAN10 // DC01, LIN-WEBAPP01, LIN-MONAUTLOG01
+10.0.1.0/24: VLAN20 // FS01, BK01
+10.0.2.0/25: VLAN30 // WIN10, WIN11 (clients)
