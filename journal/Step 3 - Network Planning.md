@@ -11,3 +11,11 @@ I want to future-proof my addressing scheme in a way that it's still simple for 
 - Readable
 - Future-proof
 
+This medium-sized business might grow one day to be an international company with thousands of stores per regions, I want to plan for it and keep a readable addressing scheme:
+
+Choice: 10.0.0.0/8, not because I need this massive amount of addresses specifically, but because I can have a better naming convention and split addresses by stores and by region in a way that is clean and readable whiel also being scalable.
+
+10.0.0.0/8
+
+Segmentation:
+HQ
