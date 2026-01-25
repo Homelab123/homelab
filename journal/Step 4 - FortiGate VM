@@ -1,0 +1,11 @@
+#Step 4 - FortiGate VM
+
+Since it's the first time I use FortiGate specifically I will go along this video series: https://www.youtube.com/watch?v=XcghOBrZANc&list=PLlEVCBdM7ELOSd9zLJNE3FrIMzZiWlSkm
+
+- Created VM with:
+  - 1 vCPU x 1 core (FortiGate license limit for free use)
+  - 2gb RAM
+  - Deleted all NIC except 3:
+    - WAN (NAT)
+    - Custom (VMnet2 aka VLAN1)
+    - Custom (VMnet3 aka VLAN2)
