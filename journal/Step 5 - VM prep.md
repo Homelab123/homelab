@@ -1,15 +1,9 @@
-#Step 3 - VM prep
+#Step 5 - VM prep
 
-For the purpose of this homelab I will create:
-- DC01 (domain controller)
-- FS01 (fileshare)
-- BK01 (backup)
-- Win10-01 (Windows 10 Pro client)
-- Win11-01 (Windows 11 Pro client)
-- LINUX01 (app/web server)
-- LINUX02 (monitoring/automation server)
 
-I have previously created a Windows Server 2022 VM, fully updated and tweaked it with a few performance tweaks and installed VMware Tools on it. Next steps taken:
+I had previously already created a windows server template, I am now going to create a Windows10 client template now that I can configure its network settings directly in the template.
+
+Steps taken:
 - Cloned "Windows Server 2022" into 3 FULL clone VMs: DC01 (domain controller), FS01 (fileshare), BK01 (backup)
 - Loaded the 3 VMs to make sure it works as intended
 - Archived "Windows Server 2022" VM as a template for future use and removed it from my VM list (Removed from VMware list and moved the VM files to "S\Homelab\Virtual Machines\VM Templates"
