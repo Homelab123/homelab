@@ -30,3 +30,8 @@ Steps taken:
 - Required diagnostic data only
 - Setup Network Settings:
   - Change Network Adapter Settings > IPv4 settings > Set preferred DNS to 10.0.0.10
+  - Left IP addressing to DHCP/automatic
+  - Disabled IPv6 addresses
+  - Confirmed I can ping 10.0.1.1 (router vm)
+
+Snapshotting and saving template as it is for now and cloning my first client. Then, I will remove the template and add it to my template VM folder.
