@@ -1,0 +1,41 @@
+#Step 6 - DC01 (Domain Controller)
+
+I will now work on my DC, I will need DNS and AD roles and I might go over DHCP too but my DHCP is handled by the FortiGate VM. I might switch back and forth just for practice.
+
+1. Network config:
+- Static IP: 10.0.0.10
+- Subnet mask: 255.255.255.0 (/24)
+- Default gateway: 10.0.0.1 (FGT01)
+- Prefered DNS: 10.0.0.10
+- Disabled IPv6
+
+Tested ping to FGT01 - working.
+
+2. Roles:
+- Add roles and features > Active Directory Domain Services + DNS Server
+
+3. Promoted server to domain controller:
+- New forest: corp.lab
+- NetBIOS name: CORPLAB
+- Set DSRM password
+- Pre-requisites installed automatically
+- Went through full install and reboot, verified AD and DNS are up and correct.
+
+4. FortiGate config and DNS forwarder:
+- Setup DC01 to forward to 8.8.8.8 (DNS Manager > Properties > Forwarders > added 8.8.8.8)
+- Went through FortiGate config:
+  - config firewall policy
+  - edit 2
+  - set name "VLAN2_to_VLAN1_AD"
+  - set srcintf port3
+  - set dstintf port2
+  - set srcaddr all
+  - set dstaddr all
+  - set action accept
+  - set schedule always
+  - set service DNS LDAP KERBEROS SMB
+  - next
+  - end
+- Tested ping from WIN10-01 to 10.0.0.10 and nslookup corp.lab - works
+
+DC01 has now a solid foudnational setup and ping works between clients to DC01 from a different subnet, will continue later.
