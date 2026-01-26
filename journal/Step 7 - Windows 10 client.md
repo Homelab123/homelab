@@ -1,4 +1,4 @@
-#Step X - Windows 10 client
+#Step 7 - Windows 10 client
 
 Now that I can set network settings directly in my template, I will create a Win10 client template:
 
