@@ -38,4 +38,4 @@ Will do the same as I did with the Win10 client but for Win11 - just trying to e
 - Ran Disk Cleanup
 - Snapshotted VM before running sysprep
 - Ran into issues with sysprep not wanting to launch which is apparently a known WIN11 issue, I have created a snapshot of the VM itself and will save it as it is as a template and go from there. This is not ideal or what should be done but for lab purposes it will have to do because it seems the windows install is at a dead end after trying multiple fixes there is stuck shared storage that prevents sysprep from running.
-- Cloned VM to WIN11-01
+- Cloned VM to WIN11-01 and removed & archived WIN11-TEMPLATE
