@@ -1,4 +1,4 @@
-#Step 5 - VM prep
+#Step 05 - VM prep
 
 The FortiGate VM will act as my router and is already made as per last step
 - FGT01 (FortiGate router VM)
