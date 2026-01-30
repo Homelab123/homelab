@@ -1,4 +1,4 @@
-#Step 6 - Domain Controller
+#Step 06 - Domain Controller
 
 I will now work on my DC, I will need DNS and AD roles and I might go over DHCP too but my DHCP is handled by the FortiGate VM. I might switch back and forth just for practice.
 
