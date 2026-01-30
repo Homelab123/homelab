@@ -1,4 +1,4 @@
-#Step 8 - Windows 11 client
+#Step 08 - Windows 11 client
 
 Will do the same as I did with the Win10 client but for Win11 - just trying to emulate a multi version of Windows environment.
 
