@@ -1,4 +1,4 @@
-#Step 4 - FortiGate VM
+#Step 04 - FortiGate VM
 
 Since it's the first time I use FortiGate specifically I will go along this video series: https://www.youtube.com/watch?v=XcghOBrZANc&list=PLlEVCBdM7ELOSd9zLJNE3FrIMzZiWlSkm
 
