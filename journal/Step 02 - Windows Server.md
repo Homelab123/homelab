@@ -1,4 +1,4 @@
-# Step 2 - Windows Server
+# Step 02 - Windows Server
 
 Choice: Windows Server 2022 from Microsoft's evaluation center
 <br>Reasoning:
