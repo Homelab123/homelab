@@ -1,4 +1,4 @@
-#Step 9 - Linux VMs
+#Step 09 - Linux VMs
 
 I have decided to finish setting up my VMs before I start troubleshooting network and make sure everything is talking to each other.
 I will add 2 linux VMs:
