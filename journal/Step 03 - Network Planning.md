@@ -1,4 +1,4 @@
-#Step 3 - Network Planning
+#Step 03 - Network Planning
 
 As I was preparing VMs and making templates I realized I should do the network/address planning first in order to build templates which are pre-configured to point to the domain controller.
 So, I saved where I was at on my templates and decided to plan the network before continuing. At first I wanted to make a complex network with multiple subnets emulating a large international enterprise, but for the 
