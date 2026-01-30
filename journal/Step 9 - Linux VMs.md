@@ -52,14 +52,14 @@ Cleanup:
   - sudo rm -f /etc/ssh/ssh_host_*
 - Clean cloud-init state:
   - sudo cloud-init clean
-- shutdown vm:
+- Shutdown vm:
   - sudo shutdown -h now
 
 - Cloned to LIN-WEBAPP-01 and LIN-AUTLOGMON-01 and stored LIN-TEMPLATE to VM template storage folder
 - Adjusted VM hardware for each machines
 
 LIN-WEBAPP-01:
-- changed hostname:
+- Changed hostname:
   - sudo hostnamectl set-hostname LIN-WEBAPP-01
   - changed hostname in /etc/hosts to 127.0.1.1 LIN-WEBAPP-01
 - Rebooted
