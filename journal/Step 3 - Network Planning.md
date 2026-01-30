@@ -25,8 +25,8 @@ VMs:
 - DC02 (for replication):               10.0.0.11/24  VLAN1 (maybe later)
 - FS01 (Fileshare):                     10.0.0.20/24  VLAN1
 - BK01 (Backup server):                 10.0.0.30/24  VLAN1
-- LINUX01 (web/app serv):               10.0.0.40/24  VLAN1
-- LINUX02 (log/monitoring/automation):  10.0.0.50/24  VLAN1
+- LIN-WEBAPP-01 (web/app serv):         10.0.0.40/24  VLAN1
+- LIN-AUTLOGMON-01 (log/mon/auto):      10.0.0.50/24  VLAN1
 
 - WIN10 (workstation):                  10.0.1.10/25  VLAN2
 - WIN11 (workstation):                  10.0.1.11/25  VLAN2
