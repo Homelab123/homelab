@@ -15,12 +15,4 @@ I currently have all my VMs setup but I am having communication issues due to fo
   - WIN10-01, WIN11-01: VMnet3 (VLAN2)
 - Verified VMs can ping FGT01 and FGT01 can ping the internet but VMs can't reach internet or the other subnets
 
-The problem is that FortiGate's free VM has a limit of 3 firewall policies, so I must broaden policies to match what I'm trying to do with a limit of 3 rules.
-
-After exploring options, there is no way to get around the 3 policy limit and acheive what I am trying to acheive which is:
-Clients to servers
-Clients to WAN
-Servers to Clients
-Servesr to WAN
-
-Therefore, I have decided to keep servers without a route to internet and keep them internal, and in the context of the homelab, if there ever was a need to update or reach internet, I can set servers to NAT with the vmware host directly while I run things like updates and revert to internal after updates.
+The problem is that FortiGate's free VM has a limit of 3 firewall policies, I will look for a solution next.
