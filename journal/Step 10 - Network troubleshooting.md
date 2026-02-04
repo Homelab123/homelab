@@ -16,3 +16,5 @@ I currently have all my VMs setup but I am having communication issues due to fo
 - Verified VMs can ping FGT01 and FGT01 can ping the internet but VMs can't reach internet or the other subnets
 
 The problem is that FortiGate's free VM has a limit of 3 firewall policies, I will look for a solution next.
+
+Solution: I will change the fortigate VM for a pfsense VM and will go from there.
