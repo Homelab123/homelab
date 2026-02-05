@@ -4,9 +4,9 @@
 - Created VM and went through installation
 - Added network adapters and configured interfaces:
 
-- WAN > em0 > v4/DHCP: 192.168.91.136/24
-- LAN > em1 > v4: 10.0.0.1/24
-- OPT1 > em2 > v4: 10.0.1.1/25
+  - WAN > em0 > v4/DHCP: 192.168.91.136/24
+  - LAN > em1 > v4: 10.0.0.1/24
+  - OPT1 > em2 > v4: 10.0.1.1/25
 
 DHCP server is enabled on em2 for clients (range 10.0.1.20-10.0.1.100)
 
