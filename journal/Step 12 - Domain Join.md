@@ -12,4 +12,21 @@ I will now join each VMs to the domain and double check configs and makes sure e
 - Did the same for WIN11-01
 - Renamed the FS01 machine from default to FS01 and joined it to the domain in the same way
 - Did the same for BK01
-- 
+- Setting up linux VMs:
+  - Enabled interace ens33:
+    - sudo ip link set ens33 up
+  - Configured netplan:
+    - sudo nano /etc/netplan/01-netcfg.yaml:
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens33:
+      dhcp4: no
+      addresses:
+        - 10.0.0.20/24
+      gateway4: 10.0.0.1
+      nameservers:
+        addresses:
+          - 10.0.0.10
+
