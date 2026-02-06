@@ -12,7 +12,8 @@ I will now join each VMs to the domain and double check configs and makes sure e
 - Did the same for WIN11-01
 - Renamed the FS01 machine from default to FS01 and joined it to the domain in the same way
 - Did the same for BK01
-- Setting up linux VMs:
+  
+- Setting up LIN-WEBAPP-01:
   - Enabled interace ens33:
     - sudo ip link set ens33 up
   - Configured netplan:
@@ -23,7 +24,7 @@ I will now join each VMs to the domain and double check configs and makes sure e
     - ethernets:
     - ens33:
     - addresses:
-      - 10.0.0.20/24
+      - 10.0.0.40/24
     - gateway4: 10.0.0.1
     - nameservers:
     - addresses:
@@ -50,4 +51,7 @@ I will now join each VMs to the domain and double check configs and makes sure e
       - added administrator@corp.lab to sudoers:
         - sudo nano /etc/sudoers
         - added administrator@corp.lab ALL=(ALL:ALL) ALL
-      
+        
+- Setting up LIN-AUTLOGMON-01: I did the same as above but the ip address is 10.0.0.50/24
+
+Will continue later.
