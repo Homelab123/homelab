@@ -17,16 +17,37 @@ I will now join each VMs to the domain and double check configs and makes sure e
     - sudo ip link set ens33 up
   - Configured netplan:
     - sudo nano /etc/netplan/01-netcfg.yaml:
-network:
-  version: 2
-  renderer: networkd
-  ethernets:
-    ens33:
-      dhcp4: no
-      addresses:
-        - 10.0.0.20/24
-      gateway4: 10.0.0.1
-      nameservers:
-        addresses:
-          - 10.0.0.10
-
+    - network:
+    - version: 2
+    - renderer: networkd
+    - ethernets:
+    - ens33:
+    - addresses:
+      - 10.0.0.20/24
+    - gateway4: 10.0.0.1
+    - nameservers:
+    - addresses:
+      - 10.0.0.10
+  - installed realmd:
+    - sudo apt install realmd
+  - discovered domain:
+    - realm discover corp.lab
+  - Joined domain:
+    - sudo realm join corp.lab -U Administrator
+    - prompted to install dependancies:
+      - sudo apt update
+      - sudo apt install -y ldap-utils libnss-sss libpam-sss sssd-ad adcli oddjob oddjob-mkhomedir packagekit
+      - retried domain join
+      - verified:
+        - realm list
+        - id corp\\administrator
+      - tried logging with corp\administrator:
+        - su - corp\\administrator
+      - fixed some firewall issues cause linux VM wasn't pinging
+      - installed krb5-user:
+        - sudo apt install krb5-user
+        - ran klist to confirm kerberos ticket
+      - added administrator@corp.lab to sudoers:
+        - sudo nano /etc/sudoers
+        - added administrator@corp.lab ALL=(ALL:ALL) ALL
+      
