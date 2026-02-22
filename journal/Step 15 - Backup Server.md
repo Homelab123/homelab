@@ -1,0 +1,52 @@
+#Step 15 - Backup Server
+
+- Previously already built BK01 on windows server 2022
+- Double checked network settings and tested
+- Downloaded https://download2.veeam.com/VBR/v12/VeeamBackup&Replication_12.3.1.1139_20250315.iso --- I downloaded this version because I don't have a company to register, this bypasses login but it's an older version. It should still be relevant for homelab purposes.
+- Mounted ISO and ran Setup executable
+- Chose Microsoft SQL Server as database option for simplicity for homelab purposes. SQL Server Instance: BK01\VEEAMSQL2016 Database name: VeeamBackup
+- Chose Local System as service account for simplicity
+- Paused here cause I need to install SQL first
+- Downloaded SQL Express from microsoft's official website
+- Installed SQL on BK01:
+  - New SQL Server standalone installation
+  - Only selected Database Engine Services
+  - Renamed instance to VEEAMSQL2016
+  - Added local administrator account
+  - Ran install
+  - Verified services.msc
+- Went back to Veeam installation and re-did what I wrote earlier
+- I had to add the Veeam's NT AUTHORITY\SYSTEM account as a SQL admin to proceed with the installation:
+  - Powershell: sqlcmd -S .\VEEAMSQL2016 -E -C
+  - CREATE LOGIN [NT AUTHORITY\SYSTEM] FROM WINDOWS;
+  - EXEC sp_addsrvrolemember N'NT AUTHORITY\SYSTEM', N'sysadmin';
+  - GO
+- Veeam Backup & Replication Console > Backup Infrastructure > Backup Repositories > Add Repository: BK01_Repository (name matches the .vmdk)
+- Added CORP\Administrator to credentials to give Veeam domain admin level access for when I will install agents on DC01 and FS01
+- Since I'm using VMware Workstation Pro, I have to use agent-based backup service.
+- Added DC01 and FS01 to Inventory so that Veeam will backup DC01 and FS01 for now, I will consider the linux VMs later
+- Inventory > Physical Infrastructure > Create Protection Group > Name: Servers Backup > Domain: corp.lab > Added Domain Controllers OU and FileServers OU
+- Because of resources limitations I ended up having to do it 1 by 1, so I did 1 for Domains Controllers and 1 for FileServers
+- Disabled Windows Firewall for Domain networks temporarily while I setup everything
+- Adjusted VM resources to make it work
+- Succesffully created protection groups: Domain Controllers (DC01) and File Servers (FS01)
+- New Backup Jobs:
+  - DC01:
+    - Server
+    - Managed by backup server
+    - Entire computer
+    - BK01_Repository (R:\VeeamBackups, seperate drive) 7 days retention
+    - Enabled Application-Aware Processing
+    - Left the job to manual, no scheduling
+  - FS01:
+    - Server
+    - Managed by backup server
+    - Volume backup (S:\)
+    - BK01_Repository (R:\VeeamBackups, seperate drive) 7 days retention
+    - Enabled Application-Aware Processing
+    - Left the job to manual, no scheduling
+- Double checked repository, drives and jobs
+- Ran test job on DC01 - successful
+- Ran test restore on DC01 - Restore Guest File > Tested a random log file C:\Windows\Logs\CBS\CBS.log - successful
+
+Will stop here for now
