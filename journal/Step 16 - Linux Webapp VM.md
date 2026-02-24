@@ -35,7 +35,7 @@ Continuing:
 - ensure permissions: sudo chmod -R 755 /var/www/html
 - restarted service: sudo systemctl restart apache2
 - restarted service: sudo systemctl restart mysql
-- Tested test-page http://192.168.91.137/info.php --- successful
+- Tested test-page --- successful
 - Reverting previous NIC changes
 - sudo ip link set ens37 down
 - sudo ip link set ens33 up
