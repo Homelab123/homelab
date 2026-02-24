@@ -10,14 +10,14 @@ Since I've explored pfSense enough to have my things work in comprtaments, I wil
 
 Addresses:
 - LAN:
-- 10.0.0.10  (VM MAC)  DC01              Static  Reserved  Static ARP
-- 10.0.0.20  (VM MAC)  FS01              Static  Reserved  Static ARP
-- 10.0.0.30  (VM MAC)  BK01              Static  Reserved  Static ARP
-- 10.0.0.40  (VM MAC)  LIN-WEBAPP-01     Static  Reserved  Static ARP
-- 10.0.0.50  (VM MAC)  LIN-AUTLOGMON-10  Static  Reserved  Static ARP
+  - 10.0.0.10  (VM MAC)  DC01              Static  Reserved  Static ARP
+  - 10.0.0.20  (VM MAC)  FS01              Static  Reserved  Static ARP
+  - 10.0.0.30  (VM MAC)  BK01              Static  Reserved  Static ARP
+  - 10.0.0.40  (VM MAC)  LIN-WEBAPP-01     Static  Reserved  Static ARP
+  - 10.0.0.50  (VM MAC)  LIN-AUTLOGMON-10  Static  Reserved  Static ARP
 
 - OPT1:
-- DHCP Range: 10.0.1.20-10.0.1.100 /24
+  - DHCP Range: 10.0.1.20-10.0.1.100 /24
 
 Firewall rules:
 - LAN subnets > OPT1 subnets: pass
