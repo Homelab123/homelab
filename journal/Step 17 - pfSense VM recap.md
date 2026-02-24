@@ -2,8 +2,6 @@
 
 Since I've explored pfSense enough to have my things work in comprtaments, I will be deleting the pfSense vm and putting everything on the same network in VMWare Workstation Pro because the limited features of workstation pro and how pfsense interacts with it and my machines makes it very hard to work with and I am fighting it most of the time due to limitations.
 
-![Homelab Network Diagram](screenshots/Untitled%Diagram.png)
-
 - NIC1/NAT: WAN - DHCP address given by host
 - NIC2/VMnet2: LAN (VLAN10) - 10.0.0.1/24
 - NIC3/VMnet3: OPT1 (VLAN20) - 10.0.1.1/25
