@@ -36,4 +36,9 @@ Wazuh:
 - Deploying new agents to VMs
 - DC01: deployed agent and NET START WazuhSvc successful
 - FS01: deployed agent and NET START WazuhSvc successful
-- BK01: 
+- BK01: deployed agent and NET START WazuhSvc successful
+- WIN10-01: deployed agent and NET START WazuhSvc successful
+- WIN11-01: deployed agent and NET START WazuhSvc successful
+- LIN-WEBAPP-01: deployed agent and NET START WazuhSvc successful
+
+Will stop here for now
