@@ -2,11 +2,6 @@
 
 Previously already installed Ubuntu and joined to domain, continuing:
 
-- added NAT NIC for temporary convenience
-- sudo ip link set ens33 down
-- sudo ip link set ens37 up
-- sudo dhclient ens37
-- ping 8.8.8.8
 - sudo apt update && sudo apt upgrade -y
 - sudo ssh-keygen -A
 - sudo apt install openssh-server -y
@@ -30,3 +25,15 @@ Wazuh:
 - User: admin
 - Password: avi9u?Wu?Da08qRkMCH1OpsXGf4X+A8o
 - 28/02/2026 13:50:21 INFO: Installation finished.
+- added firewall rules:
+- sudo ufw allow 443/tcp
+- sudo ufw allow 1514/tcp
+- sudo ufw allow 1515/tcp
+- sudo ufw allow 9200/tcp
+- sudo ufw allow OpenSSH
+- sudo ufw enable
+- logged into Wazuh GUI via DC01
+- Deploying new agents to VMs
+- DC01: deployed agent and NET START WazuhSvc successful
+- FS01: deployed agent and NET START WazuhSvc successful
+- BK01: 
