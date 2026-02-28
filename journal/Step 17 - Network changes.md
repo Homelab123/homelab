@@ -1,4 +1,4 @@
-#Step 17 - Network changes (pfsense removal)
+#Step 17 - Network changes
 
 After all I've done before with this setup, I was able to explore routing via pfsense, firewall rules, VLANs, different types of features, DHCP on router interface, etc.
 
@@ -20,5 +20,14 @@ Now removing pfSense and changing network configuration on all the VMs:
 
 - VMnet2 and 3 deleted
 - VMnet8 (NAT) settings:
-- Subnet IP: 10.0.0.0/24, Gateway: 10.0.0.1, DHCP on, range: 10.0.0.20-10.0.0.100
-- Going through each VM to match the new network
+- Subnet IP: 192.168.202.0/24, Gateway: 192.168.202.2, DHCP on, range: 192.168.202.100 - 192.168.202.200
+- Going through each VM to match the new network:
+- DC01: 192.168.202.10/24 - done
+- FS01: 192.168.202.20/24 - done
+- BK01: 192.168.202.30/24 - done
+- Added DHCP role to DC01 and configured scope
+- WIN10-01: DHCP - done
+- WIN11-01: DHCP - done
+- LIN-WEBAPP-01 - done
+- LIN-AUTLOGMON-01 - done
+- Tested all pinging both gateway, internet and DC
